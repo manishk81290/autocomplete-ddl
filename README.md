@@ -14,6 +14,9 @@ After clone in the project directory, you can run:
 
 To install all the dependencies. (In this project i have used only material icons and css from one of my other projects just to make the UI quick)
 
+## !IMPORTANT!
+
+Before running the app add client id and client secret in the .env.prod file to get the api data.
 
 ### `npm start`
 
