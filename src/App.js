@@ -14,7 +14,7 @@ const App = () => {
   const searchUsers = async username => {
     if(username!==''){
       const res = await axios.get(
-        `https://api.github.com/search/users?q=${username}&client_id=9f1007e72bf9978d8766&client_secret=5d3ed445bf7642fdb0a5c5af34add5140b0ca8ef`
+        `https://api.github.com/search/users?q=${username}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
       );
       setUsers(res.data.items);
     }
